@@ -1,3 +1,50 @@
 * {
     /* border: 0.5px dotted rgb(255, 0, 0); */
 }
+
+/* LOGIN PAGE */
+.loginPageBody {
+    background: #111827 url("../img/login-bg.svg") no-repeat center/cover;
+}
+
+.formContainer {
+    background-color: #384c67;
+    box-shadow: -1px 5px 9px #384c67;
+}
+
+.loginButton {
+    font-weight: 800;
+    background-color: #111827 !important;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px),
+    (max-width: 768px),
+    (max-width: 1024px),
+    (max-width: 1200px) {
+    .loginPageBody {
+        background: #111827 url("../img/login-bg.svg") no-repeat bottom/cover;
+    }
+
+    .contentContainer {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .formContainer {
+        margin-top: 15dvh;
+    }
+}
+
+@media (max-height: 768px) {
+    .contentContainer {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .formContainer {
+        margin-top: 13dvh;
+    }
+}

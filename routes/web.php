@@ -1,11 +1,18 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('/', 'login')->name('login');
+    // Route::post('/user/process/login', 'processLogin');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
