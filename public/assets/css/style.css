@@ -2,6 +2,12 @@
     /* border: 0.5px dotted rgb(255, 0, 0); */
 }
 
+body {
+    /* background-color: #111827; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /* LOGIN PAGE */
 .loginPageBody {
     background: #111827 url("../img/login-bg.svg") no-repeat center/cover;
@@ -10,12 +16,81 @@
 .formContainer {
     background-color: #384c67;
     box-shadow: -1px 5px 9px #384c67;
+    margin-top: 20dvh;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 
 .loginButton {
-    font-weight: 800;
+    font-weight: 900;
     background-color: #111827 !important;
 }
+
+.loginButton:hover {
+    background-color: #263149 !important;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Admin Page */
+.adminDashboardBody {
+    background: #111827 url("../img/adminDashboardBg.svg") no-repeat
+        center/cover;
+    overflow-x: hidden;
+}
+
+.adminDashboardNavbar {
+    /* background: #253150; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Misc. */
+.custom-pattern {
+    background: radial-gradient(
+                circle farthest-side at 0% 50%,
+                #253150 23.5%,
+                #0000 0
+            )
+            33.6px 48px,
+        radial-gradient(circle farthest-side at 0% 50%, #405571 24%, #0000 0)
+            30.4px 48px,
+        linear-gradient(#253150 14%, #0000 0, #0000 85%, #253150 0) 0 0,
+        linear-gradient(
+                150deg,
+                #253150 24%,
+                #405571 0,
+                #405571 26%,
+                #0000 0,
+                #0000 74%,
+                #405571 0,
+                #405571 76%,
+                #253150 0
+            )
+            0 0,
+        linear-gradient(
+                30deg,
+                #253150 24%,
+                #405571 0,
+                #405571 26%,
+                #0000 0,
+                #0000 74%,
+                #405571 0,
+                #405571 76%,
+                #253150 0
+            )
+            0 0,
+        linear-gradient(90deg, #405571 2%, #253150 0, #253150 98%, #405571 0%) 0
+            0 #253150;
+    background-size: 64px 96px;
+    background-color: #253150;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* MEDIA QUERIES */
 @media (max-width: 480px),

@@ -13,7 +13,10 @@ Route::controller(UserController::class)->group(function () {
     // Route::post('/user/process/login', 'processLogin');
 });
 
+// Routes for admin
+Route::get('/admin/dashboard', [UserController::class, 'adminDashboard'])->name('adminDashboard');
 
+// BREEZE
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

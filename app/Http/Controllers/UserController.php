@@ -9,4 +9,8 @@ class UserController extends Controller
     public function login() {
         return view('loginPage');
     }
+    
+    public function adminDashboard(){
+        return view('posAdminDashboard/dashboard');
+    }
 }

@@ -4,7 +4,8 @@
 
 <section class="body loginPageBody">
     <section
-        class="contentContainer kld--container kld--min-height-dvh-100 kld--display-flex kld--align-items-center kld--justify-center">
+        class="contentContainer kld--container kld--min-height-dvh-100">
+        
         <section class="formContainer kld--card">
             <form action="" method="post" class="kld--padding-2">
                 @csrf
