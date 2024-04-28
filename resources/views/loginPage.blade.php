@@ -16,7 +16,7 @@
                     <input type="text" class="kld--padding-1 kld--border kld--border-radius-small kld--margin-bottom-1"
                         id="username" name="username" placeholder="Enter your username" />
                     <label for="password" class="kld--text-color-white">Password:</label>
-                    <input type="text" class="kld--padding-1 kld--border kld--border-radius-small kld--margin-bottom-half"
+                    <input type="password" class="kld--padding-1 kld--border kld--border-radius-small kld--margin-bottom-half"
                         id="password" name="password" placeholder="Enter your password" />
                     <p class="kld--text-color-white kld--margin-bottom-2">
                         Don't have an accout yet?
